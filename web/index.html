@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+  <title>Cybertronics Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    a:hover
+    {
+      font-size:18px;
+      color: gray;
+    }
+    .name1:hover
+    {
+      font-size: 18px ;
+      color: rgb(17, 216, 10);
+    }
+    .name2:hover
+    {
+      font-size: 18px;
+      color: rgb(142, 59, 197);
+    }
+    .name3:hover
+    {
+      font-size: 18px;
+      color: rgb(228, 68, 68);
+    }
+    </style>
+</head>
+
+<body>
+  <div class="top">
+    <div class="nav-buttons">
+      <div class="left-side">
+        <div class="nav-link nav-format">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link">
+          <a href="index.php">Logout</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="name1">
+        CYBE
+        </div>
+        <div class="name2">
+          RTRO
+          </div>
+          <div class="name3">
+            NICS
+            </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="images">
+
+        <div class="individual-image">
+          <div class="img-background" style="background-image:url(images/display.jfif)"></div>
+
+          <div class="img-text">
+            <div class="subtitle"> Displays:You can't see wihtout me.</div>
+          </div>
+        </div>
+
+        <div class="individual-image">
+          <div class="img-background" style="background-image:url(images/keyboard.jpg)"></div>
+          <div class="img-text">
+            <div class="subtitle">Keyboards: From gaming to coding,you need me!</div>
+          </div>
+        </div>
+
+        <div class="individual-image">
+          <div class="img-background" style="background-image:url(images/mouse.jpg)"></div>
+          <div class="img-text">
+            <div class="subtitle">Mouse: Your friendly virtual pet.
+            </div>
+          </div>
+        </div>
+
+        <div class="individual-image">
+          <div class="img-background" style="background-image:url(images/graphic_card.jpg)"></div>
+          <div class="img-text">
+            <div class="subtitle">Graphic Card: Oops not getting frames? Buy me!</div>
+          </div>
+        </div>
+
+        <div class="individual-image">
+          <div class="img-background" style="background-image:url(images/ram.jpg)"></div>
+          <div class="img-text">
+            <div class="subtitle">RAM: More the merrier.</div>
+          </div>
+        </div>
+
+        <div class="individual-image">
+          <div class="img-background" style="background-image:url(images/cpu_case.jpg)"></div>
+          <div class="img-text">
+            <div class="subtitle">CPU CASE: Home for your components.</div>
+          </div>
+        </div>
+
+        <div class="individual-image">
+          <div class="img-background" style="background-image:url(images/motherboard.jpg)"></div>
+          <div class="img-text">
+            <div class="subtitle">Motherboard: MAN! alot of wires and connections.</div>
+          </div>
+        </div>
+
+        <div class="individual-image">
+          <div class="img-background" style="background-image:url(images/cooler.jfif)"></div>
+          <div class="img-text">
+            <div class="subtitle">Cooling Fans: Gotta keep your pc cool.</div>
+          </div>
+        </div>
+
+        <div class="individual-image">
+          <div class="img-background" style="background-image:url(images/power\ supply.jfif)"></div>
+          <div class="img-text">
+            <div class="subtitle">Power Supply: Watch out for Watts!</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const blur = document.querySelectorAll('.individual-image');
+
+  blur.forEach(blur=> {
+    blur.addEventListener('mouseover', () => {
+      console.log(blur.childNodes[1].classList)
+     blur.childNodes[1].classList.add('image-blur');
+    });
+
+   blur.addEventListener('mouseout', () => {
+      console.log(blur.childNodes[1].classList)
+     blur.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
